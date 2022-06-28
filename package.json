@@ -1,6 +1,9 @@
 {
   "name": "travel-exp-app",
   "version": "1.0.0",
+  "engines": {
+    "npm": "16.x"
+  },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
