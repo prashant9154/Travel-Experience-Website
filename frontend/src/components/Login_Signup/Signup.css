@@ -27,9 +27,9 @@
     outline: none;
     padding: 1rem;
     border-radius: 0.5rem;
-    height: 5rem;
+    height: 6rem;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     box-shadow: 0 0 0.5rem rgba(101, 100, 100, 0.271);
 }
 
@@ -45,14 +45,20 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    /* height: 50rem; */
 }
 
 .LoginSignUpBox {
-    background-color: white;
-    width: 40rem;
-    height: 70vh;
+    background-color:white;
+    max-width: 40rem;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    /* margin-top: 50rem; */
+    justify-content: space-evenly; 
+    flex-direction: column;
+    gap: 8rem;
+    height: 50rem;
 }
 
 .login_signUp_toggle {
@@ -88,11 +94,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40rem;
+    max-width: 40rem;
     margin: auto;
     padding: 2vmax;
     justify-content: space-evenly;
-    height: 70%;
     transition: all 0.5s;
 }
 
@@ -160,6 +165,7 @@
     padding: 0 1vmax;
     color: rgba(0, 0, 0, 0.623);
     background-color: rgb(255, 255, 255);
+    margin: 2rem 0;
 }
 
 #registerImage>input::file-selector-button:hover {
@@ -179,6 +185,7 @@
     border-radius: 4px;
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+    margin: 2rem 0;
 }
 
 .loginBtn:hover,

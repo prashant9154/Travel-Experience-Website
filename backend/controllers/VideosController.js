@@ -1,4 +1,4 @@
-const Video = require("../models/Video");
+const Video = require("../models/video");
 const ErrorHandler = require("../utils/errorhandler");
 const catchAsyncErrors = require("../middleware/catchAsyncError");
 const cloudinary = require("cloudinary");
@@ -42,7 +42,7 @@ exports.uploadVideo = catchAsyncErrors(async (req, res, next) => {
 
 //get all Videos
 exports.getAllVideos = catchAsyncErrors(async (req, res, next) => {
-    const resultPerPage = 8;
+  const resultPerPage = 8;
   const videos = await Video.find();
 
   res.status(200).json({

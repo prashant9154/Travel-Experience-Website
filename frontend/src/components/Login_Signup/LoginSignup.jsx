@@ -126,47 +126,48 @@ const LoginSignup = ({ location }) => {
                     </div>
                     <button ref={switcherTab}></button>
                   </div>
-                  <form
-                    className="loginForm"
-                    ref={loginTab}
-                    onSubmit={loginSubmit}
-                  >
-                    <input
-                      className="signup_input"
-                      type="email"
-                      name="email"
-                      value={loginEmail}
-                      placeholder="Email"
-                      onChange={(e) => setLoginEmail(e.target.value)}
-                      required
-                    />
-                    <input
-                      className="signup_input"
-                      type="password"
-                      name="password"
-                      value={loginPassword}
-                      placeholder="Password"
-                      onChange={(e) => setLoginPassword(e.target.value)}
-                      required
-                    />
-                    <Link to="/password/forget">Forget Password ?</Link>
-                    <input type="submit" value="Login" className="loginBtn" />
-                  </form>
-                  <form
-                    className="signUpForm"
-                    ref={registerTab}
-                    onSubmit={registerSubmit}
-                  >
-                    <input
-                      className="signup_input"
-                      type="text"
-                      name="name"
-                      value={name}
-                      placeholder="Name"
-                      required
-                      onChange={registerDataChange}
-                    />
-                    {/* <input
+                  <div>
+                    <form
+                      className="loginForm"
+                      ref={loginTab}
+                      onSubmit={loginSubmit}
+                    >
+                      <input
+                        className="signup_input"
+                        type="email"
+                        name="email"
+                        value={loginEmail}
+                        placeholder="Email"
+                        onChange={(e) => setLoginEmail(e.target.value)}
+                        required
+                      />
+                      <input
+                        className="signup_input"
+                        type="password"
+                        name="password"
+                        value={loginPassword}
+                        placeholder="Password"
+                        onChange={(e) => setLoginPassword(e.target.value)}
+                        required
+                      />
+                      <Link to="/password/forget">Forget Password ?</Link>
+                      <input type="submit" value="Login" className="loginBtn" />
+                    </form>
+                    <form
+                      className="signUpForm"
+                      ref={registerTab}
+                      onSubmit={registerSubmit}
+                    >
+                      <input
+                        className="signup_input"
+                        type="text"
+                        name="name"
+                        value={name}
+                        placeholder="Name"
+                        required
+                        onChange={registerDataChange}
+                      />
+                      {/* <input
                     className="signup_input"
                     type="text"
                     name="userid"
@@ -176,39 +177,40 @@ const LoginSignup = ({ location }) => {
                     onChange={registerDataChange}
                     required
                   /> */}
-                    <input
-                      className="signup_input"
-                      type="email"
-                      name="email"
-                      value={email}
-                      placeholder="Email"
-                      onChange={registerDataChange}
-                      required
-                    />
-                    <input
-                      className="signup_input"
-                      type="password"
-                      name="password"
-                      value={password}
-                      placeholder="Password"
-                      onChange={registerDataChange}
-                      required
-                    />
-                    <div id="registerImage">
-                      <img src={avatarPreview} alt="Avatar Preview" />
                       <input
-                        type="file"
-                        name="avatar"
-                        accept="image/*"
+                        className="signup_input"
+                        type="email"
+                        name="email"
+                        value={email}
+                        placeholder="Email"
                         onChange={registerDataChange}
+                        required
                       />
-                    </div>
-                    <input
-                      type="submit"
-                      value="Register"
-                      className="signUpBtn"
-                    />
-                  </form>
+                      <input
+                        className="signup_input"
+                        type="password"
+                        name="password"
+                        value={password}
+                        placeholder="Password"
+                        onChange={registerDataChange}
+                        required
+                      />
+                      <div id="registerImage">
+                        <img src={avatarPreview} alt="Avatar Preview" />
+                        <input
+                          type="file"
+                          name="avatar"
+                          accept="image/*"
+                          onChange={registerDataChange}
+                        />
+                      </div>
+                      <input
+                        type="submit"
+                        value="Register"
+                        className="signUpBtn"
+                      />
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

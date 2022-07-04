@@ -6,6 +6,7 @@
     grid-row: 0/1;
     height: 85rem;
     margin-bottom: 5rem;
+    /* overflow-x: hidden; */
 }
 
 .landing_div img{

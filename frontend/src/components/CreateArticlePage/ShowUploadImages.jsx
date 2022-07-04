@@ -3,7 +3,7 @@ import "./ShowUploadImages.css";
 import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, createimage } from "../../actions/imageAction";
 import { useAlert } from "react-alert";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { NEW_IMAGE_RESET } from "../../contants/imageConstants";
 

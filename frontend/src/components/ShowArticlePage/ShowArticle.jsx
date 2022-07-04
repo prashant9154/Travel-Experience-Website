@@ -10,7 +10,8 @@ import { useAlert } from "react-alert";
 import Loader from "../layout/Loader/Loader";
 import {clearErrors} from "../../actions/articleAction";
 import { NEW_COMMENT_RESET } from '../../contants/articleConstants';
-import {Button} from "@material-ui/core";
+import {Button} from "@mui/material";
+import "react-share";
 
 import '../HomePage/Header.css'
 
@@ -19,7 +20,7 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import {
   FacebookShareButton,
@@ -305,7 +306,7 @@ const submitReviewToggle = () => {
               >
                 <PinterestIcon size={"2rem"} round />
               </PinterestShareButton> */}
-                <EmailShareButton
+                 <EmailShareButton
                   url={shareLink}
                   subject={article.title}
                   body="body"
@@ -323,7 +324,7 @@ const submitReviewToggle = () => {
                   Cancel
                 </Button>
               </DialogActions>
-            </Dialog>
+            </Dialog> 
             <div className="comment_section">
               <h2 style={{ fontSize: "250%" }}>Comments</h2>
               <div className="add_comment">

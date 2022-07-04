@@ -11,7 +11,7 @@
 }
 
 .videos{
-    width: 30rem;
+    width: auto;
     margin: 1.3rem;
     box-shadow: 0 0 0.5rem rgba(141, 141, 141, 0.415);
 }

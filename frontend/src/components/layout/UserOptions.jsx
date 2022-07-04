@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react";
 import "./UserOptions.css";
-import { SpeedDial, SpeedDialAction} from "@material-ui/lab";
-import Backdrop from "@material-ui/core/Backdrop";
-import PersonIcon from "@material-ui/icons/Person";
-import UpdateIcon from "@material-ui/icons/Update";
-import LockIcon from "@material-ui/icons/Lock";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { SpeedDial, SpeedDialAction} from "@mui/lab";
+import Backdrop from "@mui/material/Backdrop";
+import PersonIcon from "@mui/icons-material/Person";
+import UpdateIcon from "@mui/icons-material/Update";
+import LockIcon from "@mui/icons-material/Lock";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { logout } from "../../actions/userAction";

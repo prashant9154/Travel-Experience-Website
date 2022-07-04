@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import './CreateArticle.css';
 import RichTextEditor from "../RichTextEditor/RichTextEditor";
-import {Button} from '@material-ui/core'
+import {Button} from '@mui/material'
 import Loader from "../layout/Loader/Loader";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -146,7 +146,7 @@ const [showuploadvideo, setshowuploadvideo] = useState(false);
                 </div>
                 <div className="input_field_form">
                   <div className="input_row">
-                    <label for="title">Title:</label>
+                    <label >Title:</label>
                     <input
                       className="create_inputs"
                       type="text"
@@ -159,7 +159,7 @@ const [showuploadvideo, setshowuploadvideo] = useState(false);
                     />
                   </div>
                   <div className="input_row">
-                    <label for="location">Location/Monument:</label>
+                    <label >Location/Monument:</label>
                     <input
                       className="create_inputs"
                       type="text"
@@ -172,7 +172,7 @@ const [showuploadvideo, setshowuploadvideo] = useState(false);
                     />
                   </div>
                   <div className="input_row">
-                    <label for="city">City:</label>
+                    <label>City:</label>
                     <input
                       className="create_inputs"
                       type="text"
@@ -185,7 +185,7 @@ const [showuploadvideo, setshowuploadvideo] = useState(false);
                     />
                   </div>
                   <div className="input_row">
-                    <label for="author">Author:</label>
+                    <label >Author:</label>
                     <input
                       className="create_inputs"
                       type="text"
@@ -239,8 +239,7 @@ const [showuploadvideo, setshowuploadvideo] = useState(false);
                     borderRadius: "0.5rem",
                   }}
                   type="submit"
-                  disabled={loading ? true : false}
-                >
+                  disabled={loading ? true : false}>
                   POST
                 </Button>
               </div>
