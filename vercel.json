@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name":"Travel experience",
+  "builds": [ { "src": "api/src/backend/server.js", "use": "@vercel/node" }],
+  "routes": [{ "src":"/(.*)", "dest":"/backend/server.js"}]
+}
