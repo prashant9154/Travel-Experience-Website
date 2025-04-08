@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: travel-experience-backend
+    runtime: node
+    region: oregon # You can change to any of: singapore, oregon, ohio, frankfurt, virginia
+    plan: free # Adjust as needed: free, starter, standard, etc.
+    rootDir: .
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health # You may need to add this route to your API
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: PRODUCTION
+      - key: PORT
+        value: 8080
+      - key: CLOUDINARY_NAME
+        sync: false # This requires manual input in the Render dashboard
+      - key: CLOUDINARY_API_KEY
+        sync: false # This requires manual input in the Render dashboard
+      - key: CLOUDINARY_API_SECRET
+        sync: false # This requires manual input in the Render dashboard
+      - key: DB_URI
+        sync: false # For your database connection string
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRE
+        value: 5d
+      - key: COOKIE_EXPIRE
+        value: 5
+      - key: SMPT_SERVICE
+        sync: false
+      - key: SMPT_MAIL
+        sync: false
+      - key: SMPT_PASSWORD
+        sync: false
+      - key: SMPT_HOST
+        sync: false
+      - key: SMPT_PORT
+        sync: false
+      - key: FRONTEND_URL
+        value: https://your-frontend-domain.com # Replace with your actual frontend URL when deployed
+      - key: CORS_ORIGIN
+        value: https://your-frontend-domain.com # Add this for CORS protection
